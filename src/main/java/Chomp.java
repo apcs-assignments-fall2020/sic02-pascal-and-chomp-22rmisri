@@ -14,8 +14,13 @@ public class Chomp
     // or given food was already eaten)
     public static boolean eat(char[][] board, int row, int col)
     {        
-        // YOUR CODE HERE
-        return false;
+        if ((board[row][col] == ' ') || (row > 3 || col > 6))  
+        {
+            return false;
+        }
+        else {
+            return true;
+        }
     }
     
     public static void printBoard(char[][] board)
